@@ -1,8 +1,8 @@
 <!-- top -->
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Joseph "JPLC" Cassano | Home</title>
+<title>Joseph "JPLC" Cassano | Games | Prototypes | Unity Project - Third Person Movement and Camera Control v1.0</title>
 
 <!-- Google Analytics -->
 <script>
@@ -157,7 +157,51 @@ img.customBorder
 
 <link rel="stylesheet" href="/lightbox/css/lightbox.css" type="text/css" media="screen" />
 
-
+<script type="text/javascript" src="https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
+		<script type="text/javascript">
+		<!--
+		function GetUnity() {
+			if (typeof unityObject != "undefined") {
+				return unityObject.getObjectById("unityPlayer");
+			}
+			return null;
+		}
+		if (typeof unityObject != "undefined") {
+			unityObject.embedUnity("unityPlayer", "/unity/TestGame_BasicCharControl_v1_0/TestGame_BasicCharControl_v1_0.unity3d", 600, 450);
+			
+		}
+		-->
+		</script>
+		<style type="text/css">
+		<!--
+		p.footer {
+			font-size: x-small;
+		}
+		div.contentUnity {
+			margin: auto;
+			width: 600px;
+		}
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.missing img {
+			border-width: 0px;
+		}
+		div#unityPlayer {
+			cursor: default;
+			height: 450px;
+			width: 600px;
+		}
+		-->
+		</style>
 
 </head>
 
@@ -200,11 +244,39 @@ img.customBorder
 <a href = "mailto:joseph.cassano@jplc.ca?subject=jplc.ca%20Site%20Visit">Contact</a>
 </p>
 
-<h2>Home</h2>
+<h2>Unity Project - Third Person Movement and Camera Control v1.0</h2>
 
 <div id="Content">
-<p>Welcome! This is the website of Joseph Cassano. I also go by JPLC in most places online.</p>
-<p>Feel free to have a look around. The Blog &mdash; titled "Mulling Over The Multiverse" &mdash; is for my long-form ideas/ramblings, but if you want to know what I'm up to presently, my Twitter account is much more active (<a href="http://www.twitter.com/JPLC">@JPLC</a>).</p>
+<p>
+> To move the character, use either the WASD keys or the left analog stick of a gamepad (gamepad input optimized for a Windows-based Xbox 360 Controller).
+<br>
+> To move the camera, use either the mouse, the arrow keys, or the right analog stick of a gamepad.
+<br>
+> To jump, press space or, if you have a gamepad, the equivalent of the "A" button of an Xbox 360 controller.
+<br>
+> To aim the character forward camera-wise, hold the left-hand shift key, or, if you have a gamepad, the equivalent of the "Left Bumper" button of an Xbox 360 controller.
+<br>
+> If you fall off the map, you'll have to reload this webpage to play again.
+<br>
+> If a connected gamepad is not working, make sure the controller is active and reload this webpage.
+<br>
+> If input is not being registered (including keyboard and mouse movement), click on the game to establish focus and try again.
+</p>
+<p>If the game below is not working, make sure you have the latest version of the <a href="https://unity3d.com/webplayer/">Unity Web Player</a> installed.</p>
+</div>
+<br>
+	<div class="contentUnity">
+		<div id="unityPlayer">
+			<div class="missing">
+				<a href="https://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+					<img alt="Unity Web Player. Install now!" src="https://ssl-webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<p class="footer">&laquo; created with <a href="https://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+<div id="Content">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = "/blog/?p=369">Read Blog post</a>
 </div>
 
 <p>
