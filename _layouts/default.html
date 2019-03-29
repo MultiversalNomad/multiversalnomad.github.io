@@ -4,7 +4,11 @@
     <body>
         {% include header.html %}
         <section>
-            {{ content }}
+            <h2>{{ page.title }}</h2>
+
+            <div id="Content">
+                {{ content }}
+            </div>
         </section>
         <p>~</p>
         {% include ads.html %}
