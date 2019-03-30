@@ -3,30 +3,30 @@ layout: default
 title: Games
 ---
 {% assign indexString = "index.html" %}
-{% assign gamesDir = "/games/" %}
+{% assign gamesDir = "games/" %}
 {% assign unityPrototypePageRelDir = "prototypes/unity_basic_char_control_v1_0/" %}
 {% assign unityPrototypePageDir = gamesDir | append: unityPrototypePageRelDir %}
-{% assign unityPrototypePageTitle = unityPrototypePageDir | append: indexString %}
+{% assign unityPrototypePagePath = unityPrototypePageDir | append: indexString %}
 {% assign dodgeAndShootPageRelDir = "dodge_and_shoot/" %}
 {% assign dodgeAndShootPageDir = gamesDir | append: dodgeAndShootPageRelDir %}
-{% assign dodgeAndShootPageTitle = dodgeAndShootPageDir | append: indexString %}
+{% assign dodgeAndShootPagePath = dodgeAndShootPageDir | append: indexString %}
 {% assign captureTheFrogPageRelDir = "capture_the_frog/" %}
 {% assign captureTheFrogPageDir = gamesDir | append: captureTheFrogPageRelDir %}
-{% assign captureTheFrogPageTitle = captureTheFrogePageDir | append: indexString %}
+{% assign captureTheFrogPagePath = captureTheFrogePageDir | append: indexString %}
 {% assign unityPrototypeTitle = "TITLE_NOT_FOUND" %}
 {% assign dodgeAndShootTitle = "TITLE_NOT_FOUND" %}
 {% assign captureTheFrogTitle = "TITLE_NOT_FOUND" %}
 {% for item in site.pages %}
-    {% if item.path == unityPrototypePageUrl %}
+    {% if item.path == unityPrototypePagePath %}
         {% assign unityPrototypeTitle = item.title }
-    {% elsif item.path == dodgeAndShootPageUrl %}
+    {% elsif item.path == dodgeAndShootPagePath %}
         {% assign dodgeAndShootTitle = item.title %}
-    {% elsif item.path == captureTheFrogPageUrl %}
+    {% elsif item.path == captureTheFrogPagePath %}
         {% assign captureTheFrogTitle = item.title %}
     {% endif %}
 {% endfor %}
 <p>
-<p>For a list of games that I am presently working on or have previously worked on as an employee of another company, please see my <a href="{{ site.linkedInUrl }}">R&eacute;sum&eacute;</a>.
+<p>For a list of games that I am presently working on or have previously worked on as an employee of another company, please see my <a href="{{ site.linkedInPath }}">R&eacute;sum&eacute;</a>.
 <p>The following is a reverse chronological list of games that I have made myself.</p>
 <p>
     <strong>{{ unityPrototypeTitle }}</strong>
