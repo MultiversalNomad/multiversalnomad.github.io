@@ -9,6 +9,7 @@
 {% assign aboutMeTitle = "TITLE_NOT_FOUND" %}
 {% assign gamesTitle = "TITLE_NOT_FOUND" %}
 {% for item in site.pages %}
+{{ item.path }}
     {% if item.path == homePageUrl %}
         {% assign homeTitle = item.title }
     {% elsif item.path == aboutMePageUrl %}
@@ -18,11 +19,11 @@
     {% endif %}
 {% endfor %}
 <p>
-    <a href = "{{ homePageDir }}">{{ homeTitle }}</a>
+    <a href = "{{ homePageDir }}">{{ homeTitle }} {{ homePageUrl }}</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href = "{{ aboutMePageDir }}">{{ aboutMeTitle }}</a>
+    <a href = "{{ aboutMePageDir }}">{{ aboutMeTitle }} {{ aboutMePageUrl }}</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href = "{{ gamesPageDir }}">{{ gamesTitle }}</a>
+    <a href = "{{ gamesPageDir }}">{{ gamesTitle }} {{ gamePageUrl }}</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href= "{{ site.linkedInUrl }}">R&eacute;sum&eacute;</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
