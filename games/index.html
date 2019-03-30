@@ -17,11 +17,11 @@ title: Games
 {% assign dodgeAndShootTitle = "TITLE_NOT_FOUND" %}
 {% assign captureTheFrogTitle = "TITLE_NOT_FOUND" %}
 {% for item in site.pages %}
-    {% if item.url == unityPrototypePageUrl %}
+    {% if item.path == unityPrototypePageUrl %}
         {% assign unityPrototypeTitle = item.title }
-    {% elsif item.url == dodgeAndShootPageUrl %}
+    {% elsif item.path == dodgeAndShootPageUrl %}
         {% assign dodgeAndShootTitle = item.title %}
-    {% elsif item.url == captureTheFrogPageUrl %}
+    {% elsif item.path == captureTheFrogPageUrl %}
         {% assign captureTheFrogTitle = item.title %}
     {% endif %}
 {% endfor %}

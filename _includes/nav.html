@@ -4,17 +4,16 @@
 {% assign aboutMePageDir = "/about_me/" %}
 {% assign aboutMePageUrl = aboutMePageDir | append: indexString %}
 {% assign gamesPageDir = "/games/" %}
-{% assign gamesPageDir = "/about_me/" %}
 {% assign gamesPageUrl = gamesPageDir | append: indexString %}
 {% assign homeTitle = "TITLE_NOT_FOUND" %}
 {% assign aboutMeTitle = "TITLE_NOT_FOUND" %}
 {% assign gamesTitle = "TITLE_NOT_FOUND" %}
 {% for item in site.pages %}
-    {% if item.url == homePageUrl %}
+    {% if item.path == homePageUrl %}
         {% assign homeTitle = item.title }
-    {% elsif item.url == aboutMePageUrl %}
+    {% elsif item.path == aboutMePageUrl %}
         {% assign aboutMeTitle = item.title %}
-    {% elsif item.url == gamesPageUrl %}
+    {% elsif item.path == gamesPageUrl %}
         {% assign gamesTitle = item.title %}
     {% endif %}
 {% endfor %}
