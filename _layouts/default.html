@@ -2,21 +2,23 @@
 <html>
     {% include head.html %}
     <body>
-        <div id="Content">
+        <div id="Centered">
             {% include header.html %}
-            <section>
-                <p class="centered">
-                    <h2>{{ page.title }}</h2>
-                </p>
+        </div>
+        <section>
+            <div id="Centered">
+                <h2>{{ page.title }}</h2>
+            </div>
+            <div id="Content">
                 {{ content }}
-            </section>
-            <p class="centered">
-                <p>~</p>
-                {% comment %}
-                {% include ads.html %}
-                {% endcomment %}
-                {% include footer.html %}
-            </p>
+            </div>
+        </section>
+        <div id="Centered">
+            <p>~</p>
+            {% comment %}
+            {% include ads.html %}
+            {% endcomment %}
+            {% include footer.html %}
         </div>
     </body>
 </html>
