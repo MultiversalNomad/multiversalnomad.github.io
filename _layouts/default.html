@@ -2,17 +2,17 @@
 <html>
     {% include head.html %}
     <body>
-        {% include header.html %}
-        <section>
-            <h2>{{ page.title }}</h2>
-            <div id="Content">
+        <div id="Content">
+            {% include header.html %}
+            <section>
+                <h2>{{ page.title }}</h2>
                 {{ content }}
-            </div>
-        </section>
-        <p>~</p>
-        {% comment %}
-        {% include ads.html %}
-        {% endcomment %}
-        {% include footer.html %}
+            </section>
+            <p>~</p>
+            {% comment %}
+            {% include ads.html %}
+            {% endcomment %}
+            {% include footer.html %}
+        </div>
     </body>
 </html>
