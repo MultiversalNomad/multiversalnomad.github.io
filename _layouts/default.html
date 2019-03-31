@@ -5,14 +5,18 @@
         <div id="Content">
             {% include header.html %}
             <section>
-                <h2>{{ page.title }}</h2>
+                <p class="centered">
+                    <h2>{{ page.title }}</h2>
+                </p>
                 {{ content }}
             </section>
-            <p>~</p>
-            {% comment %}
-            {% include ads.html %}
-            {% endcomment %}
-            {% include footer.html %}
+            <p class="centered">
+                <p>~</p>
+                {% comment %}
+                {% include ads.html %}
+                {% endcomment %}
+                {% include footer.html %}
+            </p>
         </div>
     </body>
 </html>
