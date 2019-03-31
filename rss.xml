@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<rss version="2.0">
+  <channel>
+    <title>Home</title>
+    <link>https://www.jplc.ca</link>
+    <description />
+    <item>
+      <guid>https://www.jplc.ca/</guid>
+      <title>Home</title>
+      <link>https://www.jplc.ca/</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://www.jplc.ca/</guid>
+      <title>Home</title>
+      <link>https://www.jplc.ca/</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://www.jplc.ca/games/</guid>
+      <title>Games</title>
+      <link>https://www.jplc.ca/games/</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://www.jplc.ca/games/capture_the_frog/</guid>
+      <title>Capture The Frog (Flash) (2010)</title>
+      <link>https://www.jplc.ca/games/capture_the_frog/</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://www.jplc.ca/about_me/</guid>
+      <title>About Me</title>
+      <link>https://www.jplc.ca/about_me/</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://www.jplc.ca/games/prototypes/unity_basic_char_control_v1_0/</guid>
+      <title>Third Person Movement and Camera Control v1.0 (Unity; Prototype) (2014)</title>
+      <link>https://www.jplc.ca/games/prototypes/unity_basic_char_control_v1_0/</link>
+      <description />
+    </item>
+    <item>
+      <guid>https://www.jplc.ca/games/dodge_and_shoot/</guid>
+      <title>Dodge &amp; Shoot (Flash) (2010)</title>
+      <link>https://www.jplc.ca/games/dodge_and_shoot/</link>
+      <description />
+    </item>
+  </channel>
+</rss>
+<!--<guid value="869839fd-c5a3-45a3-b8c6-ddf18525a1d1" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
