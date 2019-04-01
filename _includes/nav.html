@@ -1,26 +1,26 @@
-{% assign indexString = "index.html" %}
-{% assign slashString = "/" %}
-{% assign homePageDir = "" %}
-{% assign homePageStrictDir = slashString | append: homePageDir %}
-{% assign homePagePath = homePageDir | append: indexString %}
-{% assign aboutMePageDir = "about_me/" %}
-{% assign aboutMePageStrictDir = slashString | append: aboutMePageDir %}
-{% assign aboutMePagePath = aboutMePageDir | append: indexString %}
-{% assign gamesPageDir = "games/" %}
-{% assign gamesPageStrictDir = slashString | append: gamesPageDir %}
-{% assign gamesPagePath = gamesPageDir | append: indexString %}
-{% assign homeTitle = "TITLE_NOT_FOUND" %}
-{% assign aboutMeTitle = "TITLE_NOT_FOUND" %}
-{% assign gamesTitle = "TITLE_NOT_FOUND" %}
-{% for item in site.pages %}
-    {% if item.path == homePagePath %}
-        {% assign homeTitle = item.title %}
-    {% elsif item.path == aboutMePagePath %}
-        {% assign aboutMeTitle = item.title %}
-    {% elsif item.path == gamesPagePath %}
-        {% assign gamesTitle = item.title %}
-    {% endif %}
-{% endfor %}
+{%- assign indexString = "index.html" -%}
+{%- assign slashString = "/" -%}
+{%- assign homePageDir = "" -%}
+{%- assign homePageStrictDir = slashString | append: homePageDir -%}
+{%- assign homePagePath = homePageDir | append: indexString -%}
+{%- assign aboutMePageDir = "about_me/" -%}
+{%- assign aboutMePageStrictDir = slashString | append: aboutMePageDir -%}
+{%- assign aboutMePagePath = aboutMePageDir | append: indexString -%}
+{%- assign gamesPageDir = "games/" -%}
+{%- assign gamesPageStrictDir = slashString | append: gamesPageDir -%}
+{%- assign gamesPagePath = gamesPageDir | append: indexString -%}
+{%- assign homeTitle = "TITLE_NOT_FOUND" -%}
+{%- assign aboutMeTitle = "TITLE_NOT_FOUND" -%}
+{%- assign gamesTitle = "TITLE_NOT_FOUND" -%}
+{%- for item in site.pages -%}
+    {%- if item.path == homePagePath -%}
+        {%- assign homeTitle = item.title -%}
+    {%- elsif item.path == aboutMePagePath -%}
+        {%- assign aboutMeTitle = item.title -%}
+    {%- elsif item.path == gamesPagePath -%}
+        {%- assign gamesTitle = item.title -%}
+    {%- endif -%}
+{%- endfor -%}
 <p>
     <a href = "{{ homePageStrictDir }}">{{ homeTitle }}</a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
