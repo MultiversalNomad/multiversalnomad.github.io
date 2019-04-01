@@ -2,19 +2,19 @@
 layout: default
 title: Home
 ---
-{% assign twitterUrl = "https://twitter.com/JPLC" %}
-{% assign gitHubUrl = "https://github.com/MultiversalNomad" %}
-{% assign gitHubGistUrl = "https://gist.github.com/MultiversalNomad" %}
-<p>Welcome! This is the website of {{ site.firstName }} {{ site.lastName }}. I also go by {{ site.nickname }} in some places online.</p>
+{%- assign twitterUrl = "https://twitter.com/JPLC" -%}
+{%- assign gitHubUrl = "https://github.com/MultiversalNomad" -%}
+{%- assign gitHubGistUrl = "https://gist.github.com/MultiversalNomad" -%}
+<p>Welcome! This is the website of {{- site.firstName -}} {{- site.lastName -}}. I also go by {{- site.nickname -}} in some places online.</p>
 <p>Feel free to have a look around.</p>
 <p>
     <ul>
-        <li><a href="{{ twitterUrl }}">Twitter</a>
-        <li><a href="{{ gitHubUrl }}">GitHub</a>
+        <li><a href="{{- twitterUrl -}}">Twitter</a>
+        <li><a href="{{- gitHubUrl -}}">GitHub</a>
         <ul>
-            <li><a href="{{ gitHubGistUrl }}">GitHub Gist</a>
+            <li><a href="{{- gitHubGistUrl -}}">GitHub Gist</a>
         </ul>
         <li><a href="https://www.youtube.com/user/MultiversalNomad">YouTube</a>
-        <li><a href="{{ site.linkedInUrl }}">LinkedIn</a>
+        <li><a href="{{- site.linkedInUrl -}}">LinkedIn</a>
     </ul>
 </p>
