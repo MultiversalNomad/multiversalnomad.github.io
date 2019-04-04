@@ -1,36 +1,24 @@
 User-agent: Googlebot
-Disallow: /cgi-bin/
 Disallow: /flash/
 Disallow: /images/
-Disallow: /lightbox/
-Disallow: /test01/
 Disallow: /unity/
 
 User-agent: Googlebot-Mobile
-Disallow: /cgi-bin/
 Disallow: /flash/
 Disallow: /images/
-Disallow: /lightbox/
-Disallow: /test01/
 Disallow: /unity/
 
 User-agent: Googlebot-Image
 Disallow: /
 
 User-agent: Mediapartners-Google
-Disallow: /cgi-bin/
 Disallow: /flash/
 Disallow: /images/
-Disallow: /lightbox/
-Disallow: /test01/
 Disallow: /unity/
 
 User-agent: Adsbot-Google
-Disallow: /cgi-bin/
 Disallow: /flash/
 Disallow: /images/
-Disallow: /lightbox/
-Disallow: /test01/
 Disallow: /unity/
 
 User-agent: *
