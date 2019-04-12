@@ -21,14 +21,22 @@
         {%- assign gamesTitle = item.title -%}
     {%- endif -%}
 {%- endfor -%}
-<p>
-    <a href = "{{ homePageStrictDir }}">{{ homeTitle }}</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href = "{{ aboutMePageStrictDir }}">{{ aboutMeTitle }}</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href = "{{ gamesPageStrictDir }}">{{ gamesTitle }}</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href= "{{ site.linkedInUrl }}">R&eacute;sum&eacute;</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href = "mailto:{{ site.email }}?subject=jplc.ca%20Site%20Visit">Contact</a>
-</p>
+<div class="item-page-nav">
+    <div class="container-nav">
+        <div class="item-nav-link-1">
+            <p class="centered"><a href = "{{ homePageStrictDir }}">{{ homeTitle }}</a></p>
+        </div>
+        <div class="item-nav-link-2">
+            <p class="centered"><a href = "{{ aboutMePageStrictDir }}">{{ aboutMeTitle }}</a></p>
+        </div>
+        <div class="item-nav-link-3">
+            <p class="centered"><a href = "{{ gamesPageStrictDir }}">{{ gamesTitle }}</a></p>
+        </div>
+        <div class="item-nav-link-4">
+            <p class="centered"><a href= "{{ site.linkedInUrl }}">R&eacute;sum&eacute;</a></p>
+        </div>
+        <div class="item-nav-link-5">
+            <p class="centered"><a href = "mailto:{{ site.email }}?subject=jplc.ca%20Site%20Visit">Contact</a></p>
+        </div>
+    </div>
+</div>
