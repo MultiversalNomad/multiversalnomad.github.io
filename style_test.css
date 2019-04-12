@@ -1,34 +1,26 @@
 .container-page
 {
     display: grid;
-    grid-template-columns: auto 512px auto [col-last];
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto 512px auto [page-col-last];
+    grid-template-rows: auto auto auto auto;
     align-items: stretch;
     justify-items: stretch;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
 }
 
-.item-page-title
+.item-page-header
 {
-    grid-column: 1 / col-last;
+    grid-column: 1 / page-col-last;
     grid-row: 1 / span 1;
-    align-self: center;
-    justify-self: center;
-}
-
-.item-page-banner
-{
-    grid-column: 1 / col-last;
-    grid-row: 2 / span 1;
     align-self: center;
     justify-self: center;
 }
 
 .item-page-nav
 {
-    grid-column: 1 / col-last;
-    grid-row: 3 / span 1;
+    grid-column: 1 / page-col-last;
+    grid-row: 2 / span 1;
     align-self: center;
     justify-self: center;
 }
@@ -36,15 +28,42 @@
 .item-page-content
 {
     grid-column: 2 / span 1;
-    grid-row: 4 / span 1;
+    grid-row: 3 / span 1;
     align-self: center;
     justify-self: center;
 }
 
 .item-page-footer
 {
-    grid-column: 1 / col-last;
-    grid-row: 5 / span 1;
+    grid-column: 1 / page-col-last;
+    grid-row: 4 / span 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.container-header
+{
+    display: grid;
+    grid-template-columns: auto [header-col-last];
+    grid-template-rows: auto auto;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+
+.item-header-title
+{
+    grid-column: 1 / header-col-last;
+    grid-row: 1 / span 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.item-header-banner
+{
+    grid-column: 1 / header-col-last;
+    grid-row: 2 / span 1;
     align-self: center;
     justify-self: center;
 }
@@ -53,7 +72,7 @@
 {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto [row-last];
+    grid-template-rows: auto [nav-row-last];
     align-items: stretch;
     justify-items: stretch;
     grid-column-gap: 32px;
@@ -63,7 +82,7 @@
 .item-nav-link-1
 {
     grid-column: 1 / span 1;
-    grid-row: 1 / row-last;
+    grid-row: 1 / nav-row-last;
     align-self: center;
     justify-self: center;
 }
@@ -71,7 +90,7 @@
 .item-nav-link-2
 {
     grid-column: 2 / span 1;
-    grid-row: 1 / row-last;
+    grid-row: 1 / nav-row-last;
     align-self: center;
     justify-self: center;
 }
@@ -79,7 +98,7 @@
 .item-nav-link-3
 {
     grid-column: 3 / span 1;
-    grid-row: 1 / row-last;
+    grid-row: 1 / nav-row-last;
     align-self: center;
     justify-self: center;
 }
@@ -87,7 +106,7 @@
 .item-nav-link-4
 {
     grid-column: 4 / span 1;
-    grid-row: 1 / row-last;
+    grid-row: 1 / nav-row-last;
     align-self: center;
     justify-self: center;
 }
@@ -95,7 +114,7 @@
 .item-nav-link-5
 {
     grid-column: 5 / span 1;
-    grid-row: 1 / row-last;
+    grid-row: 1 / nav-row-last;
     align-self: center;
     justify-self: center;
 }
