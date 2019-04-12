@@ -100,7 +100,22 @@
     justify-self: center;
 }
 
+.centered
+{
+    text-align: center;
+}
+
+p
+{
+    text-align: left;
+}
+
 a
+{
+    text-decoration: none;
+}
+
+a.nav
 {
     text-decoration: underline overline dotted;
 }
