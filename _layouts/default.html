@@ -2,17 +2,14 @@
 <html>
     {% include head.html -%}
     <body>
-        {% include header.html -%}
-        <section>
-            <div id="TrueCentered">
-                <h2>{{ page.title }}</h2>
+        <div class="container-page">
+            {% include header.html -%}
+            <div class="item-page-content">
+                <section>
+                    <h2 class="centered">{{ page.title }}</h2>
+                    {{ content }}
+                </section>
             </div>
-            <div id="Content">
-                {{ content }}
-            </div>
-        </section>
-        <div id="Centered">
-            <p>~</p>
             {% include footer.html -%}
         </div>
     </body>
