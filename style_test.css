@@ -1,7 +1,7 @@
 .container-page
 {
     display: grid;
-    grid-template-columns: [page-col-first] auto [page-col-content-start] 512px auto [page-col-last];
+    grid-template-columns: [page-col-first] auto [page-col-content-start] 512px [page-col-content-end] auto [page-col-last];
     grid-template-rows: auto auto auto auto;
     align-items: stretch;
     justify-items: stretch;
@@ -19,7 +19,7 @@
 
 .item-page-content
 {
-    grid-column: page-col-content-start / span 1;
+    grid-column: page-col-content-start / page-col-content-end;
     grid-row: auto / span 1;
     align-self: center;
     justify-self: center;
