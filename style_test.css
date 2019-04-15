@@ -1,7 +1,7 @@
 .container-page
 {
     display: grid;
-    grid-template-columns: auto 512px auto [page-col-last];
+    grid-template-columns: [page-col-first] auto [page-col-content-start] 512px auto [page-col-last];
     grid-template-rows: auto auto auto auto;
     align-items: stretch;
     justify-items: stretch;
@@ -11,32 +11,32 @@
 
 .item-page-header
 {
-    grid-column: 1 / page-col-last;
-    grid-row: 1 / span 1;
+    grid-column: page-col-first / page-col-last;
+    grid-row: auto / span 1;
     align-self: center;
     justify-self: center;
 }
 
 .item-page-nav
 {
-    grid-column: 1 / page-col-last;
-    grid-row: 2 / span 1;
+    grid-column: page-col-first / page-col-last;
+    grid-row: auto / span 1;
     align-self: center;
     justify-self: center;
 }
 
 .item-page-content
 {
-    grid-column: 2 / span 1;
-    grid-row: 3 / span 1;
+    grid-column: page-col-content-start / span 1;
+    grid-row: auto / span 1;
     align-self: center;
     justify-self: center;
 }
 
 .item-page-footer
 {
-    grid-column: 1 / page-col-last;
-    grid-row: 4 / span 1;
+    grid-column: page-col-first / page-col-last;
+    grid-row: auto / span 1;
     align-self: center;
     justify-self: center;
 }
@@ -44,7 +44,7 @@
 .container-header
 {
     display: grid;
-    grid-template-columns: auto [header-col-last];
+    grid-template-columns: [header-col-first] auto [header-col-last];
     grid-template-rows: auto auto;
     align-items: stretch;
     justify-items: stretch;
@@ -54,16 +54,16 @@
 
 .item-header-title
 {
-    grid-column: 1 / header-col-last;
-    grid-row: 1 / span 1;
+    grid-column: header-col-first / header-col-last;
+    grid-row: auto / span 1;
     align-self: center;
     justify-self: center;
 }
 
 .item-header-banner
 {
-    grid-column: 1 / header-col-last;
-    grid-row: 2 / span 1;
+    grid-column: header-col-first / header-col-last;
+    grid-row: auto / span 1;
     align-self: center;
     justify-self: center;
 }
@@ -72,7 +72,7 @@
 {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto [nav-row-last];
+    grid-template-rows: [nav-row-first] auto [nav-row-last];
     align-items: stretch;
     justify-items: stretch;
     grid-column-gap: 32px;
@@ -81,40 +81,40 @@
 
 .item-nav-link-1
 {
-    grid-column: 1 / span 1;
-    grid-row: 1 / nav-row-last;
+    grid-column: auto / span 1;
+    grid-row: nav-row-first / nav-row-last;
     align-self: center;
     justify-self: center;
 }
 
 .item-nav-link-2
 {
-    grid-column: 2 / span 1;
-    grid-row: 1 / nav-row-last;
+    grid-column: auto / span 1;
+    grid-row: nav-row-first / nav-row-last;
     align-self: center;
     justify-self: center;
 }
 
 .item-nav-link-3
 {
-    grid-column: 3 / span 1;
-    grid-row: 1 / nav-row-last;
+    grid-column: auto / span 1;
+    grid-row: nav-row-first / nav-row-last;
     align-self: center;
     justify-self: center;
 }
 
 .item-nav-link-4
 {
-    grid-column: 4 / span 1;
-    grid-row: 1 / nav-row-last;
+    grid-column: auto / span 1;
+    grid-row: nav-row-first / nav-row-last;
     align-self: center;
     justify-self: center;
 }
 
 .item-nav-link-5
 {
-    grid-column: 5 / span 1;
-    grid-row: 1 / nav-row-last;
+    grid-column: auto / span 1;
+    grid-row: nav-row-first / nav-row-last;
     align-self: center;
     justify-self: center;
 }
@@ -136,7 +136,7 @@ a
 
 a.nav
 {
-    text-decoration: underline overline dotted;
+    text-decoration: underline overline;
 }
 
 a:link
