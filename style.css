@@ -107,3 +107,8 @@ img.customBorder
 {
     border: 3px black solid;
 }
+
+img.banner
+{
+    width: 100%;
+}
