@@ -1,4 +1,4 @@
-{% if page.unityFilePath %}
+{%- if page.unityFilePath -%}
 <script type="text/javascript">
     <!--
     var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
@@ -13,4 +13,4 @@
     u.initPlugin(jQuery("#unityPlayer")[0], "{{ page.unityFilePath }}");
     -->
 </script>
-{% endif %}
+{%- endif -%}
