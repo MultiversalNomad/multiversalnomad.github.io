@@ -1,5 +1,6 @@
 {%- if page.unityFilePath -%}
 <!-- Unity code found at: https://docs.unity3d.com/530/Documentation/Manual/WorkingwithUnityObject.html -->
+<!-- Unity code for config found at: https://github.com/unity3d-jp/inter-high-webplayer-templates/blob/master/Assets/WebPlayerTemplates/InterHighTemplate/index.html -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
         <!--
@@ -13,7 +14,10 @@
         -->
     </script>
         <script type="text/javascript">
-        var u = new UnityObject2();
+        var config = {
+        baseDownloadUrl: "http://webplayer.unity3d.com/download_webplayer-3.x/"
+        };
+        var u = new UnityObject2(config);
         u.observeProgress(function (progress) {
             var $missingScreen = jQuery(progress.targetEl).find(".missing");
             switch(progress.pluginStatus) {
