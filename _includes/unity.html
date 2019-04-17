@@ -1,7 +1,7 @@
 {%- if page.unityFilePath -%}
 <!-- Unity JavaScript code found at: https://docs.unity3d.com/530/Documentation/Manual/WorkingwithUnityObject.html -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
     <!--
     /*
     var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
@@ -14,7 +14,7 @@
     document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
     -->
 </script>
-<script type="text/javascript">
+<script>
     var u = new UnityObject2();
     u.observeProgress(function (progress) {
         var $missingScreen = jQuery(progress.targetEl).find(".missing");
