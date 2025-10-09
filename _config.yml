@@ -1,3 +1,4 @@
+include: [".well-known"]
 title: Joseph Cassano (JPLC)
 description: The personal website of Joseph Cassano (sometimes known as JPLC).
 email: joseph.cassano@jplc.ca
